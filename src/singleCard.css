@@ -1,30 +1,51 @@
-.card{
-    /* text-align: center; */
+.cards{
     position: relative;
 }
-.card img{
-    width: 70%;
+.cards img{
+    width: 100%;
+    height: 150px;
     display: block;
-    border: 2px solid #fff;
-    border-radius:6px ;
-    margin:0 auto;
-
+    border: 2px solid white;
+    border-radius: 6px;
 }
-.card .front{
+
+.cards .front{
     position: absolute;
-    transition: all ease-in 0.2s;
     transform: rotateY(90deg);
-
+    transition: all ease  0.2s;
 }
-.flipped .front {
+
+.flipped .front{
     transform: rotateY(0deg);
     transition-delay: 0.2s;
 }
-.card .back{
-    transition: all ease-in 0.2s;
+.cards .cover{
+    transition: all ease  0.2s;
     transition-delay: 0.2s;
 }
-.flipped .back{
-    transform: rotateY(90deg);
+.flipped .cover{
+    transform:rotateY(90deg) ;
     transition-delay: 0s;
 }
+
+
+@media (max-width:500px) {
+    .cards img{
+        width: 100%;
+        height: 100px;
+        display: block;
+        border: 2px solid white;
+        border-radius: 6px;
+    }
+  }
+
+  @media (max-width:500px) {
+    .cards img{
+        width: 100%;
+        height: 100px;
+        display: block;
+        border: 2px solid white;
+        border-radius: 6px;
+    }
+
+  }
